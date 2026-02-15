@@ -111,6 +111,16 @@ const AppShowcase = () => {
                   <p className="text-white-50 text-sm mt-2 line-clamp-2">
                     {project.desc}
                   </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag.id}
+                        className="bg-black-200 text-white-50 text-[10px] py-1 px-2 rounded-full border border-white/5"
+                      >
+                        {tag.name}
+                      </span>
+                    ))}
+                  </div>
                 </a>
               </div>
             ))}

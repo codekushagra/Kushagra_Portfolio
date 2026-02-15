@@ -159,10 +159,11 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Gained hands-on experience building full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). Assisted in developing scalable RESTful APIs.",
-    imgPath: "/images/exp1.png", // specific images can be added later
-    logoPath: "/images/logo1.png", // specific logo can be added later
-    title: "Software Engineer Intern",
+    review: "Completed intensive training in software development fundamentals, focusing on full-stack technologies and industry best practices. Contributed to real-world projects under senior mentorship.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logo2.png",
+    title: "Software Engineer Trainee",
+    company: "Pie Infocomm Pvt Ltd",
     date: "June 2024 - Dec 2024",
     responsibilities: [
       "Built dynamic, interactive UIs with React.js, implementing reusable components and state management using Redux.",
@@ -175,16 +176,8 @@ const expCards = [
 
 const expLogos = [
   {
-    name: "logo1",
-    imgPath: "/images/logo1.png",
-  },
-  {
     name: "logo2",
     imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
   },
 ];
 

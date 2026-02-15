@@ -22,54 +22,42 @@ const Hero = () => {
 
       <div className="hero-layout">
         <div className="hero-content-grid">
-          {/* LEFT: Hero Content */}
-          <header className="flex flex-col justify-center">
-            <div className="flex flex-col gap-7">
-              <div className="hero-text">
-                <h1>
-                  Shaping
-                  <span className="slide">
-                    <span className="wrapper">
-                      {words.map((word, index) => (
-                        <span
-                          key={index}
-                          className="flex items-center md:gap-3 gap-1 pb-2"
-                        >
-                          <img
-                            src={word.imgPath}
-                            alt="person"
-                            className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
-                          />
-                          <span>{word.text}</span>
-                        </span>
-                      ))}
-                    </span>
+          <div className="flex flex-col gap-8 md:gap-10">
+            <div className="hero-text">
+              <h1>
+                Shaping
+                <span className="slide">
+                  <span className="wrapper">
+                    {words.map((word, index) => (
+                      <span
+                        key={index}
+                        className="flex items-center justify-center md:gap-3 gap-1 pb-2"
+                      >
+                        <img
+                          src={word.imgPath}
+                          alt="person"
+                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
+                        />
+                        <span>{word.text}</span>
+                      </span>
+                    ))}
                   </span>
-                </h1>
-                <h1>into Real Projects</h1>
-                <h1>that Deliver Results</h1>
-              </div>
+                </span>
+              </h1>
+              <h1>into Real Projects</h1>
+              <h1>that Deliver Results</h1>
+            </div>
 
-              <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                Hi, I'm Kushagra Chaturvedi, a Full Stack Developer based in
-                Lucknow, India.
-              </p>
+            <p className="text-white-50 md:text-xl text-lg relative z-10 pointer-events-none max-w-3xl mx-auto">
+              Hi, I'm Kushagra Chaturvedi, a Full Stack Developer based in
+              Lucknow, India.
+            </p>
 
+            <div className="flex justify-center mt-2">
               <Button
                 text="See My Work"
                 className="md:w-80 md:h-16 w-60 h-12"
                 id="counter"
-              />
-            </div>
-          </header>
-
-          {/* RIGHT: Profile Photo */}
-          <div className="hero-photo-wrapper">
-            <div className="hero-photo-container">
-              <img
-                src="/kushagra.png"
-                alt="Kushagra Chaturvedi"
-                className="hero-photo"
               />
             </div>
           </div>
