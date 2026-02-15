@@ -81,7 +81,25 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-28 md:h-dvh h-auto min-h-[85vh] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto;
+    @apply relative z-10 xl:mt-20 mt-28 md:h-dvh h-auto min-h-[85vh] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto px-5 md:px-20;
+  }
+
+  .hero-content-grid {
+    @apply w-full grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-16 items-center;
+  }
+
+  .hero-photo-wrapper {
+    @apply flex items-center justify-center xl:justify-end order-first xl:order-last mt-10 xl:mt-0;
+  }
+
+  .hero-photo-container {
+    @apply relative w-80 h-80 md:w-96 md:h-96 xl:w-[450px] xl:h-[450px] rounded-full p-1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+  }
+
+  .hero-photo {
+    @apply w-full h-full rounded-full object-cover border-4 border-black;
   }
 
   .hero-text {
@@ -461,6 +479,15 @@ section {
   }
   100% {
     left: -100%;
+  }
+}
+
+@keyframes gradient-rotate {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
 }
 /* marquee end */
