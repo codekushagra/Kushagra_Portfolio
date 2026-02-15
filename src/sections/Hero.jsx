@@ -15,12 +15,28 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
+    <section id="hero" className="relative overflow-hidden min-h-screen">
+      {/* Dynamic Background: Beams and Grid */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 grid-background opacity-30" />
+        
+        {/* Animated Beams */}
+        <div className="absolute inset-0 flex justify-around pointer-events-none">
+          {[...Array(6)].map((_, i) => (
+            <div
+              key={i}
+              className="beam animate-beam"
+              style={{
+                left: `${(i + 1) * 15}%`,
+                animationDelay: `${i * 0.7}s`,
+                animationDuration: `${3 + i}s`,
+              }}
+            />
+          ))}
+        </div>
       </div>
 
-      <div className="hero-layout">
+      <div className="hero-layout relative z-10">
         <div className="hero-content-grid">
           <div className="flex flex-col gap-8 md:gap-10">
             <div className="hero-text">

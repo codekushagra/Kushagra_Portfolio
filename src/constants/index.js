@@ -160,8 +160,8 @@ const techStackIcons = [
 const expCards = [
   {
     review: "Completed intensive training in software development fundamentals, focusing on full-stack technologies and industry best practices. Contributed to real-world projects under senior mentorship.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
+    imgPath: "",
+    logoPath: "/images/graduate.svg",
     title: "Software Engineer Trainee",
     company: "Pie Infocomm Pvt Ltd",
     date: "June 2024 - Dec 2024",
@@ -176,8 +176,8 @@ const expCards = [
 
 const expLogos = [
   {
-    name: "logo2",
-    imgPath: "/images/logo2.png",
+    name: "pie",
+    imgPath: "/images/graduate.svg",
   },
 ];
 
@@ -479,7 +479,7 @@ const mySkills = [
       { name: "IBM Watson Studio", icon: "/images/logos/ibm.svg" },
       { name: "IBM SPSS Modeler", icon: "/images/logos/ibm.svg" },
       { name: "IBM Cognos", icon: "/images/logos/ibm.svg" },
-      { name: "MS Excel", icon: "/images/code.svg" }, // Placeholder
+      { name: "MS Excel", icon: "/images/logos/excel.svg" },
       { name: "Pandas", icon: "/images/logos/pandas.svg" },
       { name: "Matplotlib", icon: "/images/logos/matplotlib.svg" },
     ],
@@ -498,8 +498,9 @@ const mySkills = [
     title: "Others",
     skills: [
       { name: "API Integration", icon: "/images/logos/api.png" },
-      { name: "Cloudinary", icon: "/images/logos/cloudinary.svg" }, // Placeholder if not downloaded
+      { name: "Cloudinary", icon: "/images/logos/cloudinary.svg" },
       { name: "Nodemailer", icon: "/images/logos/nodem.svg" },
+      { name: "Brevo API", icon: "/images/logos/brevo.svg" },
     ],
   },
 ];

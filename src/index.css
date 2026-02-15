@@ -554,3 +554,31 @@ section {
 .animate-pulse-glow {
   animation: pulse-glow 4s ease-in-out infinite;
 }
+
+/* Hero Beams and Grid */
+.grid-background {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(ellipse at center, black, transparent 80%);
+}
+
+.beam {
+  @apply absolute pointer-events-none;
+  background: linear-gradient(to bottom, transparent, #3b82f6, transparent);
+  width: 2px;
+  height: 100px;
+  opacity: 0;
+}
+
+@keyframes beam-travel {
+  0% { transform: translateY(-100%); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.animate-beam {
+  animation: beam-travel 4s linear infinite;
+}

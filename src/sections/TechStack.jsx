@@ -139,7 +139,7 @@ const TechStack = () => {
                                 src={skill.icon}
                                 alt={skill.name}
                                 className={`w-full h-full object-contain animate-float transition-all duration-500 group-hover/skill:scale-110 ${
-                                  ["github", "clerk", "vercel"].includes(skill.name.toLowerCase())
+                                  ["github", "clerk", "vercel", "express.js", "vs code"].includes(skill.name.toLowerCase())
                                     ? "brightness-0 invert" 
                                     : ""
                                 }`}
