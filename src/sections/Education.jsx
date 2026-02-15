@@ -61,13 +61,16 @@ const Education = () => {
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="edu-text flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div>
+                      <div className="md:ml-20 ml-10">
                         <h1 className="font-semibold text-3xl">{edu.name}</h1>
                         <p className="my-5 text-white-50">
                           🗓️&nbsp;{edu.duration}
                         </p>
                         <p className="text-[#839CB5] text-xl font-medium">
                           {edu.pos}
+                        </p>
+                        <p className="text-white-50 text-sm mt-2">
+                          📍 {edu.location}
                         </p>
                       </div>
                     </div>

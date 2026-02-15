@@ -1,7 +1,7 @@
 import { abilities } from "../constants";
 
 const FeatureCards = () => (
-  <div className="w-full padding-x-lg">
+  <div className="w-full padding-x-lg md:mt-32 mt-20">
     <h2 className="text-3xl font-bold text-center mb-10">Certifications</h2>
     <div className="mx-auto grid-3-cols">
       {abilities.map(({ imgPath, title, desc }) => (

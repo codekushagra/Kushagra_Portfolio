@@ -235,24 +235,60 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
+    name: "github",
+    imgPath: "/images/logos/github.svg",
+    href: "https://github.com/codekushagra"
+  },
+  {
+    name: "instagram",
     imgPath: "/images/insta.png",
+    href: "https://www.instagram.com/hey.kushagra24/"
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    name: "leetcode",
+    imgPath: "/images/leetcode.png",
+    href: "https://leetcode.com/u/aZFEvl7337/"
   },
 ];
 
 const projects = [
+  {
+    title: "The Crochet Studio - E-Commerce Platform",
+    desc: "Designed and developed a full-stack e-commerce platform for handcrafted crochet products, serving as a real client-facing business website.",
+    subdesc:
+      "Built with Node.js, Express.js, React.js, MongoDB, Stripe/Razorpay, and Cloudinary. Features Admin Dashboard and Role-Based Access.",
+    href: "https://www.thecrochetstudio.online/",
+    texture: "/textures/project/project2.mp4",
+    logo: "/images/project-logo2.png",
+    logoStyle: {
+      backgroundColor: "#13202F",
+      border: "0.2px solid #17293E",
+      boxShadow: "0px 0px 60px 0px #2F6DB54D",
+    },
+    spotlight: "/assets/spotlight2.png",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/images/logos/react.png",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/images/logos/tailwindcss.png",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/images/logos/typescript.png",
+      },
+      {
+        id: 4,
+        name: "Framer Motion",
+        path: "/images/logos/framer.png",
+      },
+    ],
+  },
   {
     title: "Smart Learning Platform",
     desc: "Designed and developed a full-stack e-learning platform featuring real-time progress tracking, interactive course modules, and structured learning flows for users.",
@@ -282,39 +318,6 @@ const projects = [
         id: 3,
         name: "MongoDB",
         path: "/images/logos/mongodb.svg",
-      },
-    ],
-  },
-  // ... (rest of projects remain the same, ensuring this replacement is correct contextually)
-  {
-    title: "The Crochet Studio - E-Commerce Platform",
-    desc: "Designed and developed a full-stack e-commerce platform for handcrafted crochet products, serving as a real client-facing business website.",
-    subdesc:
-      "Built with Node.js, Express.js, React.js, MongoDB, Stripe/Razorpay, and Cloudinary. Features Admin Dashboard and Role-Based Access.",
-    href: "#",
-    texture: "/textures/project/project2.mp4",
-    logo: "/images/project-logo2.png",
-    logoStyle: {
-      backgroundColor: "#13202F",
-      border: "0.2px solid #17293E",
-      boxShadow: "0px 0px 60px 0px #2F6DB54D",
-    },
-    spotlight: "/assets/spotlight2.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/images/logos/react.png",
-      },
-      {
-        id: 2,
-        name: "Stripe",
-        path: "/images/logos/stripe.png", // Ensure this path exists
-      },
-      {
-        id: 3,
-        name: "Cloudinary",
-        path: "/images/logos/cloudinary.png", // Ensure this path exists
       },
     ],
   },
@@ -388,7 +391,8 @@ const education = [
     pos: "Bachelor of Technology in Computer Science Engineering (CGPA 8.3)",
     duration: "Sep 2022 - Dec 2026",
     title: "Education",
-    icon: "/images/full-time.svg", // Placeholder icon
+    icon: "/images/srmu (2).jpg",
+    location: "Lucknow, Uttar Pradesh",
   },
   {
     id: 2,
@@ -397,6 +401,7 @@ const education = [
     duration: "July 2020 - March 2022",
     title: "Education",
     icon: "/images/full-time.svg",
+    location: "Completed Class 10 & 11 from Faridabad, Haryana; relocated due to COVID-19",
   },
   {
     id: 3,
@@ -405,6 +410,7 @@ const education = [
     duration: "April 2019 - March 2020",
     title: "Education",
     icon: "/images/full-time.svg",
+    location: "Faridabad, Haryana",
   },
 ];
 
