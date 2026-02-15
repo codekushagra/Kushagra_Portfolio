@@ -5,6 +5,7 @@ import { navLinks } from "../constants";
 const NavBar = () => {
   // track if the user has scrolled down the page
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     // create an event listener for when the user scrolls
@@ -21,6 +22,14 @@ const NavBar = () => {
     // cleanup the event listener when the component is unmounted
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
@@ -42,12 +51,36 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
-          <div className="inner">
-            <span>Contact me</span>
-          </div>
-        </a>
+        {/* Hamburger Menu Button */}
+        <button
+          className="hamburger lg:hidden"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
+        >
+          <div className={`hamburger-line ${mobileMenuOpen ? "open" : ""}`} />
+          <div className={`hamburger-line ${mobileMenuOpen ? "open" : ""}`} />
+          <div className={`hamburger-line ${mobileMenuOpen ? "open" : ""}`} />
+        </button>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`mobile-menu-overlay ${mobileMenuOpen ? "open" : ""}`}
+        onClick={closeMobileMenu}
+      />
+
+      {/* Mobile Menu */}
+      <nav className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
+        <ul>
+          {navLinks.map(({ link, name }) => (
+            <li key={name}>
+              <a href={link} onClick={closeMobileMenu}>
+                {name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }

@@ -259,6 +259,7 @@ const projects = [
       "Built with Node.js, Express.js, React.js, MongoDB, Stripe/Razorpay, and Cloudinary. Features Admin Dashboard and Role-Based Access.",
     href: "https://www.thecrochetstudio.online/",
     texture: "/textures/project/project2.mp4",
+    img: "/images/project2.png",
     logo: "/images/project-logo2.png",
     logoStyle: {
       backgroundColor: "#13202F",
@@ -296,6 +297,7 @@ const projects = [
       "Built with Node.js, Express.js, React.js, MongoDB, Razorpay Payment Gateway, and Multer. Features MFA and Role-Based Access Control.",
     href: "https://e-learning-frontend-phi-peach.vercel.app/",
     texture: "/textures/project/project1.mp4",
+    img: "/images/project1.png",
     logo: "/images/project-logo1.png",
     logoStyle: {
       backgroundColor: "#2A1816",
@@ -328,6 +330,7 @@ const projects = [
       "Tech Stack: React.js, Node.js, Express.js, MongoDB, Gemini API, Web3 Authentication. Features AI-driven insights and credit-based incentives.",
     href: "#",
     texture: "/textures/project/project3.mp4",
+    img: "/images/project3.png",
     logo: "/images/project-logo3.png",
     logoStyle: {
       backgroundColor: "#60f5a1",
@@ -362,6 +365,7 @@ const projects = [
       "Managed multiple events and handling 1500+ user registrations efficiently using React.js and Tailwind CSS.",
     href: "#",
     texture: "/textures/project/project4.mp4",
+    img: "/images/project4.png",
     logo: "/images/project-logo4.png",
     logoStyle: {
       backgroundColor: "#0E1F38",

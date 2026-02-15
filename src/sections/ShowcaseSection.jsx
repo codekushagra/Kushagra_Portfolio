@@ -66,7 +66,7 @@ const AppShowcase = () => {
               className="block h-full group"
             >
               <div className="image-wrapper">
-                <img src="/images/project1.png" alt={mainProject.title} />
+                <img src={mainProject.img} alt={mainProject.title} />
               </div>
               <div className="text-content">
                 <h2>{mainProject.title}</h2>
@@ -100,10 +100,10 @@ const AppShowcase = () => {
                     }`}
                   >
                     <img
-                      src={`/images/project${index + 2}.png`} // Assuming images adhere to this naming or fallback
+                      src={project.img}
                       alt={project.title}
                       onError={(e) => {
-                        e.target.src = "/images/project1.png"; // Fallback image
+                        e.target.src = projects[0].img; // Fallback image
                       }}
                     />
                   </div>
