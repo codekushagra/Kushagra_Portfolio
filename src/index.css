@@ -81,7 +81,7 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-28 md:h-dvh h-auto min-h-[85vh] flex xl:items-center items-start justify-center overflow-hidden max-w-[1920px] mx-auto;
+    @apply relative z-10 xl:mt-20 mt-28 md:h-dvh h-auto min-h-[85vh] flex items-center justify-center overflow-hidden max-w-[1920px] mx-auto;
   }
 
   .hero-text {
